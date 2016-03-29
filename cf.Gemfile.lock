@@ -1,65 +1,68 @@
 GIT
-  remote: https://github.com/cf-buildpacks/machete
-  revision: 9c17e9f342569ed50998dec1df7480d0e06ebf5f
-  tag: v0.0.34
+  remote: https://github.com/cloudfoundry/buildpack-packager
+  revision: 1dcb43b064f2499652b021ffe5a32713cf93d79e
+  tag: v2.3.8
   specs:
-    machete (0.0.34)
-      httparty
+    buildpack-packager (2.3.8)
+      activesupport (~> 4.1)
+      kwalify (~> 0)
+      terminal-table (~> 1.4)
 
 GIT
-  remote: https://github.com/cloudfoundry/buildpack-packager
-  revision: 77ef3ffd08f902c084da4653e5373fc26ee816ea
-  tag: v2.2.7
+  remote: https://github.com/cloudfoundry/machete
+  revision: c940e3a514a8656828fbb06a701f2cd00ed34fcb
+  tag: v0.0.66
   specs:
-    buildpack-packager (2.2.7)
-      activesupport (~> 4.1.8)
-      kwalify
-      terminal-table (~> 1.4.5)
+    machete (0.0.66)
+      childprocess
+      httparty
 
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (4.1.15)
-      i18n (~> 0.6, >= 0.6.9)
-      json (~> 1.7, >= 1.7.7)
+    activesupport (4.2.8)
+      i18n (~> 0.7)
       minitest (~> 5.1)
-      thread_safe (~> 0.1)
+      thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
-    coderay (1.1.0)
+    childprocess (0.6.3)
+      ffi (~> 1.0, >= 1.0.11)
+    coderay (1.1.1)
     diff-lcs (1.2.5)
-    httparty (0.13.7)
-      json (~> 1.8)
+    ffi (1.9.18)
+    httparty (0.14.0)
       multi_xml (>= 0.5.2)
-    i18n (0.7.0)
-    json (1.8.3)
+    i18n (0.8.1)
     kwalify (0.7.2)
     method_source (0.8.2)
-    minitest (5.8.4)
-    multi_xml (0.5.5)
-    pry (0.10.3)
+    minitest (5.10.2)
+    multi_xml (0.6.0)
+    pry (0.10.4)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
-    rspec (3.4.0)
-      rspec-core (~> 3.4.0)
-      rspec-expectations (~> 3.4.0)
-      rspec-mocks (~> 3.4.0)
-    rspec-core (3.4.1)
-      rspec-support (~> 3.4.0)
-    rspec-expectations (3.4.0)
+    rspec (3.5.0)
+      rspec-core (~> 3.5.0)
+      rspec-expectations (~> 3.5.0)
+      rspec-mocks (~> 3.5.0)
+    rspec-core (3.5.1)
+      rspec-support (~> 3.5.0)
+    rspec-expectations (3.5.0)
       diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.4.0)
-    rspec-instafail (0.4.0)
+      rspec-support (~> 3.5.0)
+    rspec-instafail (1.0.0)
       rspec
-    rspec-mocks (3.4.1)
+    rspec-mocks (3.5.0)
       diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.4.0)
-    rspec-support (3.4.1)
+      rspec-support (~> 3.5.0)
+    rspec-support (3.5.0)
     slop (3.6.0)
-    terminal-table (1.4.5)
-    thread_safe (0.3.5)
-    tzinfo (1.2.2)
+    terminal-table (1.7.3)
+      unicode-display_width (~> 1.1.1)
+    thread_safe (0.3.6)
+    tzinfo (1.2.3)
       thread_safe (~> 0.1)
+    unicode-display_width (1.1.3)
 
 PLATFORMS
   ruby
@@ -71,5 +74,8 @@ DEPENDENCIES
   rspec
   rspec-instafail
 
+RUBY VERSION
+   ruby 2.3.1p112
+
 BUNDLED WITH
-   1.11.2
+   1.14.6
