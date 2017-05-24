@@ -1,0 +1,8 @@
+---
+functions:
+- path: /something
+  cmd: python something.py
+- path: /lalala
+  cmd: python example_function2.py
+- path: /abcd
+  cmd: python example_function.py
