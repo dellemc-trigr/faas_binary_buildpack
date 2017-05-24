@@ -1,4 +1,4 @@
-# Cloud Foundry Binary Buildpack
+# Cloud Foundry FaaS Binary Buildpack
 
 [![CF Slack](https://www.google.com/s2/favicons?domain=www.slack.com) Join us on Slack](https://cloudfoundry.slack.com/messages/buildpacks/)
 
@@ -31,29 +31,4 @@ Official buildpack documentation can be found at http://docs.cloudfoundry.org/bu
     cf push my_app -b custom_binary_buildpack
     ```
 
-### Testing
-Buildpacks use the [Machete](https://github.com/cloudfoundry/machete) framework for running integration tests.
-
-To test a buildpack, run the following command from the buildpack's directory:
-
-```
-BUNDLE_GEMFILE=cf.Gemfile bundle exec buildpack-build
-```
-
-More options can be found on Machete's [Github page.](https://github.com/cloudfoundry/machete)
-
-### Contributing
-
-Find our guidelines [here](./CONTRIBUTING.md).
-
-### Help and Support
-
-Join the #buildpacks channel in our [Slack community] (http://slack.cloudfoundry.org/) if you need any further assistance.
-
-### Reporting Issues
-
-Open a GitHub issue on this project [here](https://github.com/cloudfoundry/binary-buildpack/issues/new)
-
-### Active Development
-
-The project backlog is on [Pivotal Tracker](https://www.pivotaltracker.com/projects/1042066)
+1. Profit
